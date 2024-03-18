@@ -17,9 +17,7 @@ body {
     display: block;
 }
 
-footer, header, hgroup, menu, nav, {
-    display: block;
-}
+
 
 .flex-container {
     display: flex;
