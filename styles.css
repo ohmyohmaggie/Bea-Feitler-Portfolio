@@ -8,6 +8,11 @@
 
 /*NAVIGATION*/
 
+a {
+  text-decoration: none;
+  color:#000;
+}
+
 .logo-link {
   float: left;
   padding: 20px;
@@ -90,6 +95,15 @@ body {
   margin:0;
 }
 
+h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  color: #000;
+  text-decoration: none;
+}
+
 h2 {
   font-family: "Bricolage Grotesque", sans-serif;
   font-weight: 300;
@@ -99,6 +113,16 @@ h2 {
   padding: 10px;
   text-wrap: pretty;
 }
+
+p {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+}
+
 
 .grid {
   display: grid;
@@ -146,6 +170,7 @@ h2 {
 .img-wrapper > .content.fade {
   opacity: 0;
 }
+
 .img-wrapper:hover > .content.fade {
   opacity: 1;
 }
@@ -166,70 +191,7 @@ h2 {
   left: 0.75rem
 }
 
-
-
-/*RESPONSIVE*/
-@media screen and (max-width: 1245px) {}
-
-@media screen and (max-width: 1135px) {}
-
-@media screen and (max-width: 1069px) {}
-
-@media screen and (max-width: 900px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-@media screen and (max-width: 741px) {
-  .navbar a {
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-          
-  .navbar a:hover {
-    background-color: #fff;
-    color:#FF6DE6;
-    border-radius: 25px;
-    font-weight: 600;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar a {
-    padding-left: 1px;
-    padding-right: 1px;
-    font-size: 14px;
-  }
-          
-  .navbar a:hover {
-    background-color: #fff;
-    color:#FF6DE6;
-    border-radius: 25px;
-    font-weight: 600;
-  }
-}
-
-@media screen and (max-width: 400) {
-  .nav-links {
-    display: none;
-  }
-
-  .nav-logo {
-    display: none;
-  }
-
-  .responsive-logo {
-    float: right;
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    padding: 10px;
-  }
-}
-
-
+/* BREAKOUT PAGES */
 
 .separator {
   width:100%;
@@ -249,12 +211,12 @@ h2 {
 }
 
 .back-button {
-  padding-left: 20px;
+  margin-top: 4rem;
   font-family: "Bricolage Grotesque", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 14px;
-  color: #000;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 18px;
+  color: #FF6DE6;
   text-decoration: none;
 }
 
@@ -267,20 +229,127 @@ h2 {
   padding: 20px;
 }
 
-h1 {
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  bottom: 0;
+  padding: 40px;
+  width: 100%;
+  background-color: #fff;
+  color: white;
+  text-align: left;
   font-family: "Bricolage Grotesque", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 3rem;
-  color: #000;
-  text-decoration: none;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 14px;
 }
 
-p {
+.footer-text {
+  text-align: left;
   font-family: "Bricolage Grotesque", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
+  font-size: 14px;
   font-style: normal;
-  font-size: 18px;
-  color: #000;
-  text-decoration: none;
+  line-height: 1.4rem;
+}
+
+.footer-links {
+  line-height: 1.6rem;
+  font-size: 11px;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1245px) {}
+
+@media screen and (max-width: 1135px) {}
+
+@media screen and (max-width: 1069px) {}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .footer {
+    display:inline-block;
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 741px) {
+  .navbar a {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+          
+  .navbar a:hover {
+    background-color: #fff;
+    color:#FF6DE6;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+
+  .footer {
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    display:inline-block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 14px;
+  }
+          
+  .navbar a:hover {
+    background-color: #fff;
+    color:#FF6DE6;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+
+  .footer {
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    display:inline-block;
+  }
+}
+
+@media screen and (max-width: 400) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .responsive-logo {
+    float: right;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding: 20px;
+  }
+
+  .footer {
+    bottom: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    display: inline-block;
+  }
+
 }
