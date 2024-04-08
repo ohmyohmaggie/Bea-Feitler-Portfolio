@@ -1,577 +1,286 @@
 .bricolage-grotesque-200> {
-    /* Refer back to Google as the varying weights are confusing */
     font-family: "Bricolage Grotesque", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  
+    font-variation-settings: "wdth" 100;
+}
+
+/*NAVIGATION*/
+
+.logo-link {
+  float: left;
+  padding: 20px;
+}
+
+.nav-logo {
+  width: 173px;
+  height: 48px;
+}
+
+.navbar{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  padding: 0px 0px 0px 0px;
+  align-items: right;
+  height: 92px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 13px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar a{
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #FF6DE6;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.navbar li {
+  float: right;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  padding: 10px;
+}
+
+
+/*HERO*/
+
+.hero-design {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: sticky;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero_design_img
+{
+  width: 100%;
+  height: auto;
+  display: block;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*BODY*/
 
 body {
-    min-height: 100%;
-    color: #333;
-    background-color: #fff;
-    margin: 0;
-    display: block;
+  margin: 0;
+  margin-bottom: 25rem;
+  background-color: #fff;
+  margin:0;
 }
 
-
-.flex-container {
-    display: flex;
-}
-
-.col {
-    flex: 1;
-    margin: 5px;
-}
-
-h1 {
-    margin: .67em 0;
-    font-size: 2em;
-  }
-
-img {
-    border: 0;
-    max-width: 100%;
-    vertical-align: middle;
-    display: inline-block
-}
-
-html.w-mod-touch * {
-    background-attachment: scroll !important;
-  }
-
-button, input, select {
-    color: inherit;
-    font: inherit;
-    margin: inherit;
-}
-
-html {
-    height: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-.intro-section {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 20px;
-    flex-direction: column;
-    justify-content:  flex-start;
-    align-items: flex-start;
-    padding: 20px 20px 5px 20px;
-    display: flex;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-h1 {
-    margin-top: 20px;
-    font-size: 38px;
-    line-height: 44px;
-  }
-  
 h2 {
-    margin-top: 20px;
-    font-size: 32px;
-    line-height: 36px;
-  }
-  
-h3 {
-    margin-top: 20px;
-    font-size: 24px;
-    line-height: 30px;
-  }
-  
-h4 {
-    margin-top: 10px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-  
-h5 {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 20px;
-  }
-  
-h6 {
-    margin-top: 10px;
-    font-size: 12px;
-    line-height: 18px;
-  }
-  
-p {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-.navbar-logo-left-container.shadow-three {
-  width: 100%;
-  max-width: 1140px;
-  margin-bottom: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.container {
-    width: 100%;
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-.navbar-wrapper {
-    justify-content: space-between;
-    align-items: center;
-    font-family: Bricolage Grotesque, sans-serif;
-    display: flex;
-  }
-  
-.nav-menu-two {
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-    display: flex;
-  }
-  
-.nav-link {
-    color: #1a1b1f;
-    letter-spacing: .25px;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: none;
-  }
-
-.nav-divider {
-    width: 1px;
-    height: 22px;
-    background-color: #e4ebf3;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-
-.button-primary {
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background-color: #1a1b1f;
-    padding: 12px 25px;
-    font-size: 12px;
-    line-height: 20px;
-    transition: all .2s;
-  }
-  
-.button-primary:hover {
-    color: #fff;
-    background-color: #32343a;
-  }
-  
-.button-primary:active {
-    background-color: #43464d;
-  }
-  
-.button-primary.footer-form-button {
-    padding: 8px 18px;
-    position: absolute;
-    right: 8px;
-  }
-  
-.hero-heading-left {
-    background-color: #fff;
-    border-bottom: 1px solid #e4ebf3;
-    padding: 10px 9px 88px 30px;
-    font-family: Bricolage Grotesque, sans-serif;
-    position: relative;
-  }
-  
-.hero-wrapper {
-    height: auto;
-    grid-column-gap: 72px;
-    grid-row-gap: 72px;
-    object-fit: fill;
-    flex-flow: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 0;
-    display: flex;
-    position: static;
-    overflow: auto;
-  }
-  
-.hero-split {
-    max-width: 46%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    display: flex;
-  }
-  
-.margin-bottom-24px {
-    margin-bottom: 24px;
-    font-family: Inconsolata, monospace;
-  }
-  
-.hero-image {
-    width: 65%;
-    height: auto;
-    max-width: none;
-    object-fit: fill;
-    flex: none;
-    box-shadow: 0 4px 24px rgba(150, 163, 181, .08);
-  }
-
-  .footer-subscribe {
-    border-bottom: 1px solid #e4ebf3;
-    padding: 50px 30px 40px;
-    position: relative;
-  }
-  
-  .footer-form-two {
-    background-color: #f5f7fa;
-    margin-bottom: 40px;
-    padding: 64px;
-  }
-  
-  .footer-form-container-two {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-  }
-  
-  .footer-form-title {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  
-  .footer-form-block-two {
-    justify-content: flex-end;
-    align-items: center;
-    display: flex;
-    position: relative;
-  }
-  
-  .footer-form-input {
-    width: 460px;
-    height: 48px;
-    border: 1px #000;
-    margin-bottom: 0;
-    padding: 12px 180px 12px 20px;
-  }
-  
-  .footer-form-input::-ms-input-placeholder {
-    color: rgba(26, 27, 31, .8);
-  }
-  
-  .footer-form-input::placeholder {
-    color: rgba(26, 27, 31, .8);
-  }
-  
-  .footer-wrapper-three {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-  }
-  
-  .footer-block-three {
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: -20px;
-    margin-right: -20px;
-    display: flex;
-  }
-  
-  .footer-link-three {
-    color: #1a1b1f;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-decoration: none;
-  }
-  
-  .footer-link-three:hover {
-    color: rgba(26, 27, 31, .75);
-  }
-  
-  .footer-social-block-three {
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: -32px;
-    display: flex;
-  }
-  
-  .footer-social-link-three {
-    margin-left: 32px;
-  }
-  
-  .footer-divider-two {
-    width: 100%;
-    height: 1px;
-    background-color: #e4ebf3;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .footer-bottom {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-  }
-
-  .heading {
-    font-family: Bricolage Grotesque, sans-serif;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 70px;
-  }
- 
-  .intro-section {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 20px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px 20px 5px;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .top-nav {
-    width: 100%;
-    max-width: 727px;
-    background-color: #fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 5px 20px;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .navbarcontainer {
-    width: 100%;
-    max-width: 778px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .navbar-content {
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .navbar-wrapper-2 {
-    width: 100%;
-    grid-column-gap: 19px;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .empty-div {
-    width: 180px;
-    height: 17px;
-    grid-column-gap: 24px;
-    background-color: #fff;
-    justify-content: flex-start;
-    align-items: center;
-    text-decoration: none;
-    display: flex;
-    position: relative;
-  }
-  
-  .navbar-brand-2 {
-    flex: 0 auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-decoration: none;
-    display: flex;
-    position: absolute;
-    top: 5px;
-    left: 0;
-  }
-  
-  .logo-wrapper {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .barcode-logo {
-    width: auto;
-    height: 48px;
-    max-width: none;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .navbar-menu {
-    grid-column-gap: 12px;
-    flex: 0 auto;
-    justify-content: center;
-    align-items: center;
-    padding-left: 26px;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .nav-button {
-    grid-column-gap: 4px;
-    text-transform: uppercase;
-    flex: 0 auto;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 12px;
-    font-family: Bricolage Grotesque, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .h5 {
-    color: #000;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Bricolage Grotesque, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 100%;
-    text-decoration: none;
-  }
-  
-  .vectors-wrapper-2 {
-    width: 8px;
-    height: 8px;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .right {
-    width: 180px;
-    grid-column-gap: 24px;
-    justify-content: flex-end;
-    align-items: center;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .hero {
-    width: 100%;
-    max-width: 1400px;
-    grid-row-gap: 80px;
-    background-color: #fff;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .container-3 {
-    width: 100%;
-    max-width: 1400px;
-    grid-column-gap: 19px;
-    border-radius: 16px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .content {
-    width: 100%;
-    height: 597px;
-    max-width: 561px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    display: flex;
-  }
-  
-  .exhibition-hero {
-    width: 70%;
-    height: 50%;
-    aspect-ratio: auto;
-    object-fit: cover;
-  }
-  
-  .bea-logo {
-    width: 25%;
-    max-width: none;
-    flex: none;
-  }
-  
-  .container-4 {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-decoration: none;
-    display: flex;
-  }
- 
-
-
-/*  COMMENTS FROM TUTORIALS
-
-.dm-sans {
-  font-family: "DM Sans", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 300;
   font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  text-wrap: pretty;
 }
 
-.circle {
-  width: 100px; 
-  height: 100px; 
-  background-color: red;
-  border-radius: 50%; 
-  position: absolute; 
-  top: -50px; 
-  left: -50px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.container {
-	display: flex;
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.img-wrapper > img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-position: center;
+  object-fit: cover;
+}
+
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0; 
+  padding: 1rem;
+  background: rgba(255, 255, 255, .4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur {
+  filter: blur(5px);
+}
+
+.img-wrapper:hover > img.zoom {
+  transform: scale(1.1);
+}
+
+.img-wrapper > .content.fade {
+  opacity: 0;
+}
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+#responsiveMenuToggleButton {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+#responsiveMenuToggleButton svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--light-text);
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem
+}
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1245px) {}
+
+@media screen and (max-width: 1135px) {}
+
+@media screen and (max-width: 1069px) {}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 741px) {
+  .navbar a {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+          
+  .navbar a:hover {
+    background-color: #fff;
+    color:#FF6DE6;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    padding-left: 1px;
+    padding-right: 1px;
+    font-size: 14px;
+  }
+          
+  .navbar a:hover {
+    background-color: #fff;
+    color:#FF6DE6;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 400) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+
+  .responsive-logo {
+    float: right;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding: 10px;
+  }
+}
+
+
+
+.separator {
+  width:100%;
+  height: 92px;
+}
+
+.two-column-grid {
+  display: grid;
+  padding-left: 100px;
+  padding-right: 100px;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.two-column-grid > * {
+  padding:1rem;
+}
+
+.back-button {
+  padding-left: 20px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.breakout-image {
+  width: 100%;
+}
+
+.breakout-description {
+  max-width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  color: #000;
+  text-decoration: none;
 }
 
 p {
-	width: 50%;
-	padding: 50px;
-	text-indent: 1em;
-    font-family: "DM Sans", sans-serif;
-	text-wrap: pretty;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
 }
-
-
-*/
